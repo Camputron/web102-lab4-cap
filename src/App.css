@@ -1,0 +1,137 @@
+.whole-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.6rem;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
+/* ---- Form ---- */
+.form-container {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 0 0 1.5rem;
+}
+
+.form {
+  list-style: none;
+  background: #16213e;
+  border: 1px solid #2a3a6e;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.form h2 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+  color: #ff6ec4;
+}
+
+.form p {
+  font-size: 0.8rem;
+  color: #b8c1ec;
+  margin: 0.4rem 0 0;
+}
+
+.textbox {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #3a4a7e;
+  background: #0f3460;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.textbox:focus {
+  outline: none;
+  border-color: #7873f5;
+  box-shadow: 0 0 0 2px rgba(120, 115, 245, 0.4);
+}
+
+/* ---- Button ---- */
+.button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.7rem 1.8rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(120, 115, 245, 0.5);
+}
+
+/* ---- Screenshot ---- */
+.screenshot {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ---- Containers ---- */
+.container {
+  background: #16213e;
+  border: 1px solid #2a3a6e;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  text-align: left;
+  word-break: break-all;
+}
+
+.container h3 {
+  color: #7873f5;
+  margin-top: 0;
+}
+
+.container p {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #b8c1ec;
+}
+
+/* ---- Gallery ---- */
+.gallery {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  list-style: none;
+}
+
+.gallery-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+}
